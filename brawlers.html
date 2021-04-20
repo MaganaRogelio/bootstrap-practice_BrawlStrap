@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrawlStrap</title>
+    <!-- Bootstrap -->
+    <link rel='stylesheet' type='text/css' media='screen' href='./dist/mystyle.css'>
+    <!-- Icons-->
+    <link href="./fontawesome/css/all.css" rel="stylesheet">
+</head>
+<body>
+    <header class="position-absolute-fixed">
+        <nav class="navbar navbar-expand-lg navbar-light bg-warning d-flex">
+            <div class="container-fluid" >
+                <span class="nav-brand text-white fs-3 fw-bold ">BRAWLSTRAP </span>
+                <span class=""><img class="img-logo m-3 bg-transparent" src="https://i.pinimg.com/originals/ca/bf/24/cabf248936714d38b0709bcbe7ee5f6c.png" alt="Logo"> </span>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-white fw-bolder" href="./index.html">Inicio</a> 
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link text-white fw-bolder bg-darkyellow" href="#">Brawlers</a>
+                        </li>  
+                        <li class="nav-item"> 
+                            <a class="nav-link text-white fw-bolder" href="./modes.html" >Eventos</a>                    
+                        </li>   
+                        </ul>
+                     <a href="https://supercell.com/en/games/brawlstars/" target="blank"><button class="btn btn-dark mb-3 me-3"><i class="fas fa-download">&nbsp&nbsp</i>Descargar juego </button></a>
+                    <form class="d-flex">
+                        <input class="form-control me-2 bg-warning" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-dark "><i class="fas fa-arrow-alt-circle-left"></i></button>
+                    </form>  
+                </div>                               
+            </div>
+        </nav>
+      
+  
+    </header>
+      <button class="btn btn-ligthblue fs-5 text-white position-sticky top-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Tipos de Brawler <i class="far fa-question-circle"></i></button>
+      <div class="offcanvas offcanvas-end w-100" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 id="offcanvasRightLabel">Clasificación</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+           <p class="fs-4">Los Brawlers cuentan con dos tipos de clasificación. A continuación serán mostradas dichas maneras,</p>
+           <table class="table table-bordeless">
+                <thead><tr><th scope="col">Tipo de Brawler</th></tr></thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Luchador</th> <td>Este tipo de Brawler es el más común, diponiendo de habilidades enfocadas a una pelea en equipos.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Francotirador</th> <td>Otro de los tipos del más común que tenemos. Este como su nombre lo dice, dispone de ataque a distancia pero normalmente débil ya que es recomendado mantener a la distancia de la batalla. </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Lanzador</th> <td>Estos Brawlers tiene la capacidad particular de lanzar sus ataques a través de paredes. </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Peso Pesado</th> <td>Enfocados a estar dentro de la pelea. Son Brawlers que disponen de demasiada vida y comúnmente de control de adversario.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Asesino</th> <td>Los Brawler asesinos son seleccionados para acabar de una manera rápida a sus enemigos. Cuentan con mucho daño pero poca vida, por lo que cuentan con habilidades de movilidad y sigilo. Este tipo de Brawlers cuenta con una subclase, cada una con su descriptivo nombre.
+                        <ul class="fs-bold">
+                            <li class="fw-lighter text-muted">Asesino Sigiloso</li>
+                            <li class="text-success">Asesino Tóxico</li>
+                            <li class="text-info">Asesino de Acción</li>
+                            <li class="text-warning">Asesino Veloz</li>
+                        </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Apoyo</th> <td>Brawlers que disponen de habilidades que sirven de gran utilidad al equipo, podiendolos <i class="text-success fw-bold">curar</i>, <i class="text-danger fw-bold">aumentar su daño</i>, <i class="text-primary fw-bold"> mejorar su velocidad</i> o <i class="text-warning fw-bold"> generar objetos </i> dentro del mapa del juego.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Propio</th> <td>Este tipo de Brawler es nombrado de distinto tipo dependiendo de sus características o habilidades. Actualmente existen solo dos de estos:<br> <b>Bateador y Escupefuego</b></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="fs-4"> Además existen 3 formas distintas de conseguir los brawlers:</p>
+            <table class="table table-striped">
+                <thead><tr><th scope="col">Forma de conseguir</th></tr></thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Por recompensa en el camino de trofeos. </th> <td>Se obtienen al ganar una determinada cantidad de trofeos. Son: <br><br>
+                        Shelly, Nita, Colt, Bull, Jessie, Brock, Dynamike, Bo, Tick, 8-Bit, EMZ, Stu.</td>            
+                    </tr>
+                    <tr>
+                        <th scope="row">De manera aleatoria en cajas</th> <td>Estos brawlers tienen una probabilidad de salir en las cajas que viene determinada por su calidad:
+                        <table class="table table-hover"  border="1px">
+                           <thead><tr><th scope="col">Nombre</th> <th>Probabilidad</th><th>Brawler</th></tr></thead>
+                            <tr>
+                                <td>Especial</td>
+                                <td>Tienen una probabilidad de 2%. </td>
+                                <td>Son El Primo, Poco, Barley y Rosa.</td>
+                            </tr>
+                            <tr>
+                                <td>Superespecial</td>
+                                <td>Tienen una probabilidad de 1%.</td>
+                                <td>Son Penny, Rico, Darryl, Jacky y Carl.</td>
+                            </tr>
+                            <tr>
+                                <td>Épico</td>
+                                <td>Tienen una probabilidad de 0.5%.</td>
+                                <td>Son Piper, Pam, Frank, Bibi, Bea, Nani y Edgar.</td>
+                            </tr>
+                            <tr>
+                                <td>Mítico</td>
+                                <td>Tienen una probabilidad de 0.25%.</td>
+                                <td>Son Mortis, Tara, Genio, Max, Sprout, Mr. P, Byron y próximamente Squeak.</td>
+                            </tr>
+                            <tr>
+                                <td>Legendario</td>
+                                <td>Tienen una probabilidad de 0.125%.</td>
+                                <td>Son Spike, Crow, León, Sandy y Amber.</td>
+                            </tr>
+                        </table>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Brawlers del Brawl Pass </th> <td>También conocidos como brawlers cromáticos. Se pueden conseguir de dos formas: <br>
+                        1.- Comprando el Brawl Pass. Se obtiene de manera segura en el nivel 30 del Brawl Pass de pago.<br>
+                        2.- Si no compras el Brawl Pass, el brawler cromático de esa temporada tendrá calidad de legendario, pero tendrás que llegar al rango 30.<br><br> Pasará a ser mítico en la siguiente temporada, y después de dos temporadas a épico.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="fs-4">Cada brawler tienen diferentes habilidad estelares o gadget, Las habilidad estelares se consiguen en cuanto tu brawler haya alcanzado el nivel 9 y los gadget al nivel 7. Ahora hay en el juego un total de 46 brawlers.</p>
+        </div>
+    </div>
+    <main class="p-5"> 
+       
+        <section class="container">
+            <div class="row align-items-center justify-content-end">
+                <h1 class="col-12 col-sm-5 col-md-5 h1 text-center">BRAWLERS</h1>
+                <div class="col-12 col-sm-4 col-md-4 text-center dropdown">
+                    <button class="btn btn-dark m-3 dropdown-toggle fs-3" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"> Ordenar por </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Tipo</a></li>
+                        <li><a class="dropdown-item" href="#">Rareza</a></li>
+                        <li><a class="dropdown-item" href="#">Dificultad</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row  justify-content-center align-items-center">
+            <div class="col-3 m-2" style="width: 15rem;">
+               <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="https://static.wikia.nocookie.net/brawlstars/images/f/f0/8-BIT_Portrait.png/revision/latest/scale-to-width-down/120?cb=20191012200012" class="card-img-top img-thumbnail img-cards" alt="8-bit"></button>
+            </div><div class="col-3 m-2" style="width: 15rem;">
+               <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="https://static.wikia.nocookie.net/brawlstars/images/c/c8/Stu_Portrait.png/revision/latest/scale-to-width-down/120?cb=20210309220216" class="card-img-top img-thumbnail img-cards" alt="Stu"></button>
+            </div>
+            <div class="col-3 m-2" style="width: 15rem;">
+               <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="https://static.wikia.nocookie.net/brawlstars/images/0/08/Colt_Portrait.png/revision/latest/scale-to-width-down/120?cb=20210115110713" class="card-img-top img-thumbnail img-cards" alt="Colt"></button>
+            </div>
+            <div class="col-3 m-2" style="width: 15rem;">
+               <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="https://static.wikia.nocookie.net/brawlstars/images/e/e5/Shelly_Portrait.png/revision/latest/scale-to-width-down/120?cb=20200304182226" class="card-img-top img-thumbnail img-cards" alt="Shelly"></button>
+            </div>
+            <div class="col-3 m-2" style="width: 15rem;">
+               <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="https://static.wikia.nocookie.net/brawlstars/images/9/9f/Nita_Portrait.png/revision/latest/scale-to-width-down/120?cb=20200304182317" class="card-img-top img-thumbnail img-cards" alt="Nita"></button>
+            </div>
+            <div class="col-3 m-2" style="width: 15rem;">
+               <button type="button" class="btn text-nowrap" data-bs-toggle="modal" data-bs-target=""><img src="https://static.wikia.nocookie.net/brawlstars/images/7/72/Tick_Portrait.png/revision/latest/scale-to-width-down/120?cb=20190629012550" class="card-img-top img-thumbnail img-cards" alt="Tick"></button>
+            </div>
+            <div class="col-3 m-2" style="width: 15rem;">
+               <button type="button" class="btn text-nowrap" data-bs-toggle="modal" data-bs-target=""><img src="https://static.wikia.nocookie.net/brawlstars/images/a/a4/Emz_Portrait.png/revision/latest/scale-to-width-down/120?cb=20200304182125" class="card-img-top img-thumbnail img-cards" alt="EMZ"></button>
+            </div>
+            <div class="col-3 m-2" style="width: 15rem;">
+               <button type="button" class="btn text-nowrap" data-bs-toggle="modal" data-bs-target=""><img src="https://static.wikia.nocookie.net/brawlstars/images/6/64/Dynamike_Portrait.png/revision/latest/scale-to-width-down/120?cb=20200304182305" class="card-img-top img-thumbnail img-cards" alt="Dinamike"></button>
+            </div>
+            <div class="col-3 m-2" style="width: 15rem;">
+               <button type="button" class="btn text-nowrap" data-bs-toggle="modal" data-bs-target=""><img src="https://static.wikia.nocookie.net/brawlstars/images/c/c5/El_Primo_Portrait.png/revision/latest/scale-to-width-down/120?cb=20191012200018" class="card-img-top img-thumbnail img-cards" alt="El Primo"></button>
+            </div>
+            <div class="col-3 m-2" style="width: 15rem;">
+               <button type="button" class="btn text-nowrap" data-bs-toggle="modal" data-bs-target=""><img src="https://static.wikia.nocookie.net/brawlstars/images/a/a1/Barley_Portrait.png/revision/latest/scale-to-width-down/120?cb=20200304182055" class="card-img-top img-thumbnail img-cards" alt="Barley"></button>
+            </div>
+            <div class="col-3 m-2" style="width: 15rem;">
+               <button type="button" class="btn text-nowrap" data-bs-toggle="modal" data-bs-target=""><img src="https://static.wikia.nocookie.net/brawlstars/images/5/59/Poco_Portrait.png/revision/latest/scale-to-width-down/120?cb=20210115111016" class="card-img-top img-thumbnail img-cards" alt="Poco"></button>
+            </div>
+            <div class="col-3 m-2" style="width: 15rem;">
+               <button type="button" class="btn text-nowrap" data-bs-toggle="modal" data-bs-target=""><img src="https://static.wikia.nocookie.net/brawlstars/images/9/94/Rosa_Portrait.png/revision/latest/scale-to-width-down/120?cb=20200303144700" class="card-img-top img-thumbnail img-cards" alt="Poco"></button>
+            </div>
+            <div class="col-3 m-2" style="width: 15rem;">
+               <button type="button" class="btn text-nowrap" data-bs-toggle="modal" data-bs-target=""><img src="https://static.wikia.nocookie.net/brawlstars/images/e/e1/Rico_Portrait.png/revision/latest/scale-to-width-down/120?cb=20200304182045" class="card-img-top img-thumbnail img-cards" alt="Rico"></button>
+            </div>
+            <div class="col-3 m-2" style="width: 15rem;">
+               <button type="button" class="btn text-nowrap" data-bs-toggle="modal" data-bs-target=""><img src="https://static.wikia.nocookie.net/brawlstars/images/4/46/Darryl_Portrait.png/revision/latest/scale-to-width-down/120?cb=20200317100419" class="card-img-top img-thumbnail img-cards" alt="Darryl"></button>
+            </div>
+            <div class="col-3 m-2" style="width: 15rem;">
+               <button type="button" class="btn text-nowrap" data-bs-toggle="modal" data-bs-target=""><img src="https://static.wikia.nocookie.net/brawlstars/images/8/8d/Penny_Portrait.png/revision/latest/scale-to-width-down/120?cb=20200304182356" class="card-img-top img-thumbnail img-cards" alt="Penny"></button>
+            </div>
+            <div class="col-3 m-2" style="width: 15rem;">
+               <button type="button" class="btn text-nowrap" data-bs-toggle="modal" data-bs-target=""><img src="https://static.wikia.nocookie.net/brawlstars/images/1/19/Carl_Portrait.png/revision/latest/scale-to-width-down/120?cb=20200304182115" class="card-img-top img-thumbnail img-cards" alt="Carl"></button>
+            </div>
+            <div class="col-3 m-2" style="width: 15rem;">
+               <button type="button" class="btn text-nowrap" data-bs-toggle="modal" data-bs-target=""><img src="https://static.wikia.nocookie.net/brawlstars/images/0/03/Jacky_Portrait.png/revision/latest/scale-to-width-down/120?cb=20200317100434" class="card-img-top img-thumbnail img-cards" alt="Jacky"></button>
+            </div>
+            <div class="col-3 m-2" style="width: 15rem;">
+               <button type="button" class="btn text-nowrap" data-bs-toggle="modal" data-bs-target=""><img src="https://static.wikia.nocookie.net/brawlstars/images/f/f0/Piper_Portrait.png/revision/latest/scale-to-width-down/120?cb=20200304182144" class="card-img-top img-thumbnail img-cards" alt="Piper"></button>
+            </div>
+            <div class="col-3 m-2" style="width: 15rem;">
+               <button type="button" class="btn text-nowrap" data-bs-toggle="modal" data-bs-target=""><img src="https://static.wikia.nocookie.net/brawlstars/images/d/dc/Pam_Portrait.png/revision/latest/scale-to-width-down/120?cb=20200513143851" class="card-img-top img-thumbnail img-cards" alt="Pam"></button>
+            </div>
+            <div class="col-3 m-2" style="width: 15rem;">
+               <button type="button" class="btn text-nowrap" data-bs-toggle="modal" data-bs-target=""><img src="https://static.wikia.nocookie.net/brawlstars/images/6/63/Frank_Portrait.png/revision/latest/scale-to-width-down/120?cb=20200304182409" class="card-img-top img-thumbnail img-cards" alt="Frank"></button>
+            </div>
+            <div class="col-3 m-2" style="width: 15rem;">
+               <button type="button" class="btn text-nowrap" data-bs-toggle="modal" data-bs-target=""><img src="https://static.wikia.nocookie.net/brawlstars/images/c/c2/Bibi_Portrait.png/revision/latest/scale-to-width-down/120?cb=20200303144656" class="card-img-top img-thumbnail img-cards" alt="Bibi"></button>
+            </div>
+            <div class="col-3 m-2" style="width: 15rem;">
+               <button type="button" class="btn text-nowrap" data-bs-toggle="modal" data-bs-target=""><img src="https://static.wikia.nocookie.net/brawlstars/images/a/ae/Bea_Portrait.png/revision/latest/scale-to-width-down/120?cb=20200317100451" class="card-img-top img-thumbnail img-cards" alt="Bea"></button>
+            </div>
+            <div class="col-3 m-2" style="width: 15rem;">
+               <button type="button" class="btn text-nowrap" data-bs-toggle="modal" data-bs-target=""><img src="https://static.wikia.nocookie.net/brawlstars/images/c/c0/Nani_Portrait.png/revision/latest/scale-to-width-down/120?cb=20200513144321" class="card-img-top img-thumbnail img-cards" alt="Nani"></button>
+            </div>
+            <div class="col-3 m-2" style="width: 15rem;">
+               <button type="button" class="btn text-nowrap" data-bs-toggle="modal" data-bs-target=""><img src="https://static.wikia.nocookie.net/brawlstars/images/b/b4/Edgar_Portrait.png/revision/latest/scale-to-width-down/120?cb=20201218104515" class="card-img-top img-thumbnail img-cards" alt="Edgar"></button>
+            </div>
+            <div class="col-3 m-2" style="width: 15rem;">
+               <button type="button" class="btn text-nowrap" data-bs-toggle="modal" data-bs-target=""><img src="https://static.wikia.nocookie.net/brawlstars/images/b/b4/Edgar_Portrait.png/revision/latest/scale-to-width-down/120?cb=20201218104515" class="card-img-top img-thumbnail img-cards" alt="Mortis"></button>
+            </div>
+            <div class="col-3 m-2" style="width: 15rem;">
+               <button type="button" class="btn text-nowrap" data-bs-toggle="modal" data-bs-target=""><img src="https://static.wikia.nocookie.net/brawlstars/images/4/49/Tara_Portrait.png/revision/latest/scale-to-width-down/120?cb=20190630191241" class="card-img-top img-thumbnail img-cards" alt="Tara"></button>
+            </div>
+            <div class="col-3 m-2" style="width: 15rem;">
+               <button type="button" class="btn text-nowrap" data-bs-toggle="modal" data-bs-target=""><img src="https://static.wikia.nocookie.net/brawlstars/images/7/7c/Gene_Portrait.png/revision/latest/scale-to-width-down/120?cb=20200304182105" class="card-img-top img-thumbnail img-cards" alt="Genio"></button>
+            </div>
+            <div class="col-3 m-2" style="width: 15rem;">
+               <button type="button" class="btn text-nowrap" data-bs-toggle="modal" data-bs-target=""><img src="https://static.wikia.nocookie.net/brawlstars/images/8/83/Max_Portrait.png/revision/latest/scale-to-width-down/120?cb=20201022114240" class="card-img-top img-thumbnail img-cards" alt="N/A"></button>
+            </div>
+            <div class="col-3 m-2" style="width: 15rem;">
+               <button type="button" class="btn text-nowrap" data-bs-toggle="modal" data-bs-target=""><img src="https://static.wikia.nocookie.net/brawlstars/images/0/08/Mr._P_Portrait.png/revision/latest/scale-to-width-down/120?cb=20200317100443" class="card-img-top img-thumbnail img-cards" alt="Mr. P"></button>
+            </div>
+            <div class="col-3 m-2" style="width: 15rem;">
+               <button type="button" class="btn text-nowrap" data-bs-toggle="modal" data-bs-target=""><img src="https://static.wikia.nocookie.net/brawlstars/images/4/4d/Sprout_Portrait.png/revision/latest/scale-to-width-down/120?cb=20200404120105" class="card-img-top img-thumbnail img-cards" alt="Sprout"></button>
+            </div>
+            <div class="col-3 m-2" style="width: 15rem;">
+               <button type="button" class="btn text-nowrap" data-bs-toggle="modal" data-bs-target=""><img src="https://static.wikia.nocookie.net/brawlstars/images/f/f6/Byron_Portrait.png/revision/latest/scale-to-width-down/120?cb=20201218104523" class="card-img-top img-thumbnail img-cards" alt="Byron"></button>
+            </div>
+            <div class="col-3 m-2" style="width: 15rem;">
+               <button type="button" class="btn text-nowrap" data-bs-toggle="modal" data-bs-target=""><img src="https://static.wikia.nocookie.net/brawlstars/images/2/22/Spike_Portrait.png/revision/latest/scale-to-width-down/120?cb=20200304182450" class="card-img-top img-thumbnail img-cards" alt="Spike"></button>
+            </div>
+            <div class="col-3 m-2" style="width: 15rem;">
+               <button type="button" class="btn text-nowrap" data-bs-toggle="modal" data-bs-target=""><img src="https://static.wikia.nocookie.net/brawlstars/images/6/6f/Crow_Portrait.png/revision/latest/scale-to-width-down/120?cb=20200706075842" class="card-img-top img-thumbnail img-cards" alt="Crow"></button>
+            </div>
+            <div class="col-3 m-2" style="width: 15rem;">
+               <button type="button" class="btn text-nowrap" data-bs-toggle="modal" data-bs-target=""><img src="https://static.wikia.nocookie.net/brawlstars/images/4/48/Leon_Portrait.png/revision/latest/scale-to-width-down/120?cb=20200304182803" class="card-img-top img-thumbnail img-cards" alt="Leon"></button>
+            </div>
+            <div class="col-3 m-2" style="width: 15rem;">
+               <button type="button" class="btn text-nowrap" data-bs-toggle="modal" data-bs-target=""><img src="https://static.wikia.nocookie.net/brawlstars/images/e/e3/Sandy_Portrait.png/revision/latest/scale-to-width-down/120?cb=20200304182134" class="card-img-top img-thumbnail img-cards" alt="Sandy"></button>
+            </div>
+            <div class="col-3 m-2" style="width: 15rem;">
+               <button type="button" class="btn text-nowrap" data-bs-toggle="modal" data-bs-target=""><img src="https://static.wikia.nocookie.net/brawlstars/images/9/96/Amber_Portrait.png/revision/latest/scale-to-width-down/120?cb=20201022114232" class="card-img-top img-thumbnail img-cards" alt="Amber"></button>
+            </div>
+            <div class="col-3 m-2" style="width: 15rem;">
+               <button type="button" class="btn text-nowrap" data-bs-toggle="modal" data-bs-target=""><img src="https://static.wikia.nocookie.net/brawlstars/images/3/3f/Gale_Portrait.png/revision/latest/scale-to-width-down/120?cb=20200513143833" class="card-img-top img-thumbnail img-cards" alt="Gale"></button>
+            </div>
+            <div class="col-3 m-2" style="width: 15rem;">
+               <button type="button" class="btn text-nowrap" data-bs-toggle="modal" data-bs-target=""><img src="https://static.wikia.nocookie.net/brawlstars/images/2/27/Surge_Portrait.png/revision/latest/scale-to-width-down/120?cb=20200706075845" class="card-img-top img-thumbnail img-cards" alt="Surge"></button>
+            </div>
+            <div class="col-3 m-2" style="width: 15rem;">
+               <button type="button" class="btn text-nowrap" data-bs-toggle="modal" data-bs-target=""><img src="https://static.wikia.nocookie.net/brawlstars/images/e/e8/Colette_Portrait.png/revision/latest/scale-to-width-down/120?cb=20200911212332" class="card-img-top img-thumbnail img-cards" alt="Colette"></button>
+            </div>
+            <div class="col-3 m-2" style="width: 15rem;">
+               <button type="button" class="btn text-nowrap" data-bs-toggle="modal" data-bs-target=""><img src="https://static.wikia.nocookie.net/brawlstars/images/0/0b/Lou_Portrait.png/revision/latest/scale-to-width-down/120?cb=20201111223555" class="card-img-top img-thumbnail img-cards" alt="Lou"></button>
+            </div>
+            <div class="col-3 m-2" style="width: 15rem;">
+               <button type="button" class="btn text-nowrap" data-bs-toggle="modal" data-bs-target=""><img src="https://static.wikia.nocookie.net/brawlstars/images/4/48/Colonel_Ruffs_Portrait.png/revision/latest/scale-to-width-down/120?cb=20210204010252" class="card-img-top img-thumbnail img-cards" alt="Coronel Ruffs"></button>
+            </div>
+            <div class="col-3 m-2" style="width: 15rem;">
+               <button type="button" class="btn text-nowrap" data-bs-toggle="modal" data-bs-target=""><img src="https://static.wikia.nocookie.net/brawlstars/images/8/82/Belle_Portrait.png/revision/latest/scale-to-width-down/120?cb=20210406000502" class="card-img-top img-thumbnail img-cards" alt="Belle"></button>
+            </div>
+            <div class="col-3 m-2" style="width: 15rem;">
+               <button type="button" class="btn text-nowrap" data-bs-toggle="modal" data-bs-target=""><img src="https://static.wikia.nocookie.net/brawlstars/images/f/ff/Tokens.png/revision/latest/scale-to-width-down/90?cb=20200304150024" class="card-img-top img-thumbnail img-cards" alt="N/A"></button>
+            </div>
+            <div class="col-3 m-2" style="width: 15rem;">
+               <button type="button" class="btn text-nowrap" data-bs-toggle="modal" data-bs-target=""><img src="https://static.wikia.nocookie.net/brawlstars/images/f/ff/Tokens.png/revision/latest/scale-to-width-down/90?cb=20200304150024" class="card-img-top img-thumbnail img-cards" alt="N/A"></button>
+            </div>            
+        </section>
+
+        <!-- Modal 1 -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">8-BIT</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body container">
+                    <div class="row">
+                    <span class="col-lg-6 align-items-center text-center"><img src="https://static.wikia.nocookie.net/brawlstars/images/a/a2/8-BIT_Skin-Default.png/revision/latest/scale-to-width-down/310?cb=20201107112028" class="rounded img-modal" alt="8-BIT"></span>
+                    <div class="col-lg-6">
+                        <p >8-BIT es una maquinita de arcade con patas equipada con una potente pistola láser. Dispara rayos abrasivos y su súper aumenta su daño y el de sus aliados.</p>
+                        
+                        <table class="table table-bordeless">
+                        <thead><tr><th scope="col">Características</th></tr></thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Rareza</th> <td>Común</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Tipo</th> <td>Francotirador</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Velocidad de Movimiento</th> <td>580 (Muy Lento)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Salud</th> <td>6720</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Ataque</th> <td>Rayos Abrasivos</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Súper</th> <td>Amplificadaño</td>
+                            </tr>
+                        </tbody>
+                        </table>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container-fluid position-relative bg-warning ">
+            <div class="row align-items-center">
+                <a class="col-6 col-sm-6 col-lg-4 fs-4 fw-bold text-center">Más sobre de Supercell</a>
+                <a class="col-6 col-sm-6 col-lg-4 fs-4 fw-bold text-center">Para desarroladores</a>
+                <div class="col-12 col-sm-12 col-lg-4 fs-4 fw-bold text-center">Redes sociales
+                    <div class="row justify-content-end"> 
+                        <span class="col-12 col-sm-6 col-lg-12 fs-5 fw-light">YouTube  &nbsp<i class="fab fa-youtube"></i></span> 
+                        <span class="col-12 col-sm-6 col-lg-12 fs-5 fw-light">Twitter  &nbsp<i class="fab fa-twitter"></i></span> 
+                        <span class="col-12 col-sm-6 col-lg-12 fs-5 fw-light">Instagram  &nbsp<i class="fab fa-instagram"></i></span> 
+                        <span class="col-12 col-sm-6 col-lg-12 fs-5 fw-light">Reddit  &nbsp<i class="fab fa-reddit"></i></span> 
+                    </div>
+                </span> 
+            </div> 
+        </div>
+    </footer>
+    <script src="./dist/js/bootstrap.js"></script>  
+</body>
+</html>

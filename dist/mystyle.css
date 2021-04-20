@@ -1,0 +1,83 @@
+@import "./css/bootstrap.css";
+
+.bg-darkyellow {
+	background-color: #DBA400;
+}
+
+.btn-ligthblue {
+	background-color: #2DB1F6;
+}
+
+.bg-gemas {
+	background-color: #8806CE;
+	border-radius: 10px;
+}
+
+.bg-super {
+	background-color: #3CCB3C;
+	border-radius: 10px;
+}
+
+.bg-balon {
+	background-color: #70A3CC;
+	border-radius: 10px;
+}
+
+.bg-atraco {
+	background-color: #BF00FF;
+	border-radius: 10px;
+}
+
+.bg-caza {
+	background-color: #00CCFF;
+	border-radius: 10px;
+}
+
+.bg-asedio {
+	background-color: #E73C00;
+	border-radius: 10px;
+}
+
+.bg-zona {
+	background-color: #E21313;
+	border-radius: 10px;
+}
+
+.bg-liga {
+	background-color: #FFFF00;
+	border-radius: 10px;
+}
+
+
+
+
+.img-logo{
+    width: 5rem;
+}
+
+.img-event{
+	height: 4rem;
+}
+
+.img-cards {
+	width: 12rem;
+	height: 10rem;
+}
+.img-modal {
+	width: 18rem;
+}
+
+p {
+    text-align: justify;
+}
+tr td{
+	text-align: justify;
+}
+
+section {
+	padding: 0 2vw;
+}
+
+.dropdownMenuButton2:after {
+	aria-
+}

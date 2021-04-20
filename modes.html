@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrawlStrap</title>
+    <!-- Bootstrap -->
+    <link rel='stylesheet' type='text/css' media='screen' href='./dist/mystyle.css'>
+    <!-- Icons-->
+    <link href="./fontawesome/css/all.css" rel="stylesheet">
+</head>
+<body>
+    <header class="position-absolute-fixed">
+        <nav class="navbar navbar-expand-lg navbar-light bg-warning d-flex">
+            <div class="container-fluid" >
+                <span class="nav-brand text-white fs-3 fw-bold ">BRAWLSTRAP </span>
+                <span class=""><img class="img-logo m-3 bg-transparent" src="https://i.pinimg.com/originals/ca/bf/24/cabf248936714d38b0709bcbe7ee5f6c.png" alt="Logo"> </span>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-white fw-bolder" href="./index.html">Inicio</a> 
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-white fw-bolder" href="./brawlers.html">Brawlers</a>
+                        </li>  
+                        <li class="nav-item active"> 
+                            <a class="nav-link text-white fw-bolder bg-darkyellow" href="#" >Eventos</a>                    
+                        </li>   
+                        </ul>
+                     <a href="https://supercell.com/en/games/brawlstars/" target="blank"><button class="btn btn-dark mb-3 me-3"><i class="fas fa-download">&nbsp&nbsp</i>Descargar juego </button></a>
+                    <form class="d-flex">
+                        <input class="form-control me-2 bg-warning" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-dark "><i class="fas fa-arrow-alt-circle-left"></i></button>
+                    </form>  
+                </div>                               
+            </div>
+        </nav>
+    </header>
+    <main class="p-5">
+         <section>
+            <h1 class="h1 text-center"><b>EVENTOS</b></h1>
+            <p class="fs-5 fw-light lh-sm"> Existen variados modos de juego que elegir, cada uno con objetivos y estrategias diferentes, llamados eventos. Cada evento, dependiendo del tipo, dará algunas recompensas al jugador, ya sean trofeos o fichas. Existen dos clases de eventos: los normales, que a su vez pueden ser permanentes o rotativos; y los semanales o especiales, que solo pueden ser jugados cada cierto tiempo. <br><br> Las distintas clases de eventos son:</p>
+        </section>
+        <section>
+            <h2 class="h2 text-center">Eventos Normales</h2>
+            <p class="fs-5 fw-light lh-sm"> Los eventos normales son aquellos eventos que siempre están presentes dentro de la pantalla de selección de eventos y en los que el usuario puede ganar o perder trofeos. Periódicamente cambian los mapas en los distintos eventos para generar mayor diversidad en los combates. Hasta el momento hay un total de ocho eventos de este tipo, los cuales son:</p>
+
+            <h4>Permanentes</h4>
+            <p class="fs-5 fw-light lh-sm"> Corresponden a juegos permanentes que son jugables durante toda la semana, los mapas cambian o rotan cada un día. Estos juegos corresponden a:</p>
+            <div class="container-fluid">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-5 card m-2 h-75" >
+                    <div class="card-body">
+                        <h5 class="card-title h4 text-center bg-gemas">Atrapagemas <img src="https://static.wikia.nocookie.net/brawlstars/images/1/1e/Gem_Grab.png/revision/latest/scale-to-width-down/90?cb=20200304181851" class="img-event" alt="atrapagemas"></h5>
+                        <p class="card-text">Es un modo de juego de dos equipos de tres jugadores en el que el objetivo principal es conseguir 10 gemas, que saldrán del centro del mapa y que tu equipo deberá de retener hasta que acabe el conteo regresivo. Si tienes una gema y mueres, la perderás; si tienes las diez gemas y te matan se reiniciará el contador. Si el contador llega a 0 y tu equipo ha conservado las diez gemas entonces recibirán la victoria.</p>
+                    </div>
+                </div>
+                <div class="col-lg-5 card m-2 h-75" >
+                    <div class="card-body">
+                        <h5 class="card-title h4 text-center bg-super">Supervivencia <img src="https://static.wikia.nocookie.net/brawlstars/images/c/c6/Duo_Showdown.png/revision/latest/scale-to-width-down/90?cb=20200304181901" class="img-event" alt="supervivencia"></h5>
+                        <p class="card-text">Es un modo de juego del tipo Battle Royale en el que 10 jugadores serán distribuidos a lo largo del mapa y tendrán que luchar por sus vidas, el último jugador que quede vivo ganara la partida. <br>
+                        Se puede jugar de dos maneras, en solo o en dúo; permitiendo también hacer equipos de 2  con un total de 5 equipos por partida.</p>
+                    </div>
+                </div>
+                <div class="col-lg-10 card m-2 h-75">
+                    <div class="card-body">
+                        <h5 class="card-title h4 text-center bg-balon">Balón Brawl <img src="https://static.wikia.nocookie.net/brawlstars/images/4/48/Brawl_Ball.png/revision/latest/scale-to-width-down/90?cb=20200304181916" class="img-event" alt="balon brawl"></h5>
+                        <p class="card-text">Es un modo de juego de equipos con temática de fútbol, cuyo objetivo es anotar un gol dentro de la portería del equipo enemigo. El primero que anote dos goles al equipo enemigo será el vencedor, en caso de que pase el tiempo, que es de 2 minutos y medio y haya un empate se entrará en<i> 'Tiempo extra'</i> durante un minuto. Todos los obstáculos serán destruidos al pasar 2 minutos y medio si el partido va en empate. Si pasan los 2 minutos y medio, y un equipo va con una ventaja de 1 a 0, ganará el equipo.</p>
+                    </div>
+                </div>
+            </div>
+            </div>     
+            <h4>Rotativos</h4>
+            <p class="fs-5 fw-light lh-sm"> Corresponden a juegos que cambian con otras modalidades cada ciertos días, es decir, cambian entre sí cada un día. Todos los juegos son de 2 equipos de 3 jugadores. Los juegos son los siguientes:</p>
+            <div class="container-fluid">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-5 card m-2 h-75" >
+                    <div class="card-body">
+                        <h5 class="card-title h4 text-center bg-atraco">Atraco <img src="https://static.wikia.nocookie.net/brawlstars/images/1/16/Heist.png/revision/latest/scale-to-width-down/90?cb=20200304181906" class="img-event" alt="atraco"></h5>
+                        <p class="card-text">Dentro de este, ambos equipos tendrán una caja fuerte con una vida dependiente a él nivel de los jugadores en la partida de su lado del mapa y el objetivo principal será defender tu caja e intentar destruir a toda costa la caja del equipo rival. Si no se logra destruir la caja, entonces resultará victorioso aquel equipo que le haya logrado hacer más porcentaje de daño a la caja fuerte rival.</p>
+                    </div>
+                </div>
+                <div class="col-lg-5 card m-2 h-75">
+                    <div class="card-body">
+                        <h5 class="card-title h4 text-center bg-caza">Caza Estelar <img src="https://static.wikia.nocookie.net/brawlstars/images/e/e0/Bounty.png/revision/latest/scale-to-width-down/90?cb=20200304181921" class="img-event" alt="atrapagemas"></h5>
+                        <p class="card-text">El objetivo de este modo es conseguir la mayor cantidad de estrellas posibles en un lapso de 2 minutos. Las estrellas se pueden conseguir derrotando a otros Brawlers y todos inician con dos estrellas, pero cuidado, cada vez que mates a alguien tu número de estrellas aumentará. Todas las estrellas que el jugador y sus compañeros reúnan serán añadidas al contador de estrellas de su equipo.<br>
+                        En caso de empate, Brawl Stars decidió meter una manera de desempatar. En el medio, habrá una estrella azul que podrás agarrar y te podrán quitar los enemigos al matarte, si al final del tiempo los dos equipos empatan en estrellas será la estrella azul la que decidirá al ganador.</p>
+                    </div>
+                </div>
+                <div class="col-lg-5 card m-2 h-75">
+                    <div class="card-body">
+                        <h5 class="card-title h4 text-center bg-asedio">Asedio <img src="https://static.wikia.nocookie.net/brawlstars/images/f/f6/Siege.png/revision/latest/scale-to-width-down/90?cb=20190228194045" class="img-event" alt="asedio"></h5>
+                        <p class="card-text">Consiste en recolectar la mayor cantidad de tornillos posibles, que irán saliendo en el centro del mapa, para armar un robot y atacar la <i>"ensambladora IKE"</i> del enemigo. <br>
+                        Este modo tiene un máximo de 3 rondas y aquel equipo que posea la mayor cantidad de tornillos en una ronda será el que construya el robot. El equipo que logre hacer mayor daño o destruya su ensambladora IKE resultará victorioso.<br>
+                        Hay un área, en la que, dependiendo el valor medio de la fuerza de los brawlers, hará un daño que va desde los 700 a los 1000 por cualquier cosa enemiga que entre allí, contando al robot y personajes.</p>
+                    </div>
+                </div>
+                <div class="col-lg-5 card m-2 h-25">
+                    <div class="card-body">
+                        <h5 class="card-title h4 text-center bg-zona">Zona Restringida <img src="https://static.wikia.nocookie.net/brawlstars/images/8/84/Hot_Zone.png/revision/latest/scale-to-width-down/90?cb=20200513173734" class="img-event" alt="zona restringida"></h5>
+                        <p class="card-text">Trata de permanecer en áreas marcadas por el juego sin que tu enemigo te elimine, cuando entras en esa zona marcada empieza a avanzar un contador de 0% a 100% el primer equipo en llegar a 100% o cuando acabe el tiempo con más %, saldrá victorioso.Puede haber desde una zona, hasta 3 zonas. Si hay una zona, el primer equipo en llegar al 100% gana. Si hay dos, en cuanto un equipo haya hecho un 50% en una zona, esa zona dejará de contar como porcentaje para el equipo, y deberá despalzarse a la otra zona.</p>
+                    </div>
+                </div>
+                <div class="col-lg-10 card m-2h-75">
+                    <div class="card-body">
+                        <h5 class="card-title h4 text-center bg-liga">Liga Estelar <img src="https://static.wikia.nocookie.net/brawlstars/images/1/1a/Power_League.png/revision/latest/scale-to-width-down/90?cb=20210316212048" class="img-event" alt="liga estelar"></h5>
+                        <p class="card-text">Es un modo de juego implementado en la actualización de marzo de 2021 de Brawl Stars. Con este modo, se daba un giro total al competitivo, ya que a partir de ese momento, cualquier jugador por encima de las 4500 copas podía jugar este modo de juego. <br>
+                        La temporada dura 10 semanas, que estarán conectadas a la temporada de Brawl Pass, aunque su primera duró menos debido a que el Brawl Pass ya llevaba más de un mes. Se hace en un formato de al “mejor de 3”</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <h4>Eventos especiales</h4>
+            <p class="fs-5 fw-light lh-sm"> Son una clase de eventos a los que el jugador sólo puede acceder el fin de semana. La recompensa de estos modos de juego es de muchas fichas, sin embargo, aquí no se podrán ganar trofeos.</p> 
+            <div class="container-fluid">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-5 card m-2 h-75" >
+                    <div class="card-body">
+                        <h5 class="card-title h4 text-center bg-zona">Megabrawler <img src="https://static.wikia.nocookie.net/brawlstars/images/1/18/Big_Game.png/revision/latest/scale-to-width-down/90?cb=20200304181927" class="img-event" alt="megabrawler"></h5>
+                        <p class="card-text">En este evento, cinco Brawlers juntos se enfrentarán en el campo de batalla contra un súper Brawler que tendrá una vida y daños potenciados. Si el equipo logra derrotar al Mega Brawler antes de que el contador llegue a 2:00 minutos entonces resultarán victoriosos, caso contrario en el que haya sobrevivido el Mega Brawler entonces él será el ganador.</p>
+                    </div>
+                </div>
+                <div class="col-lg-5 card m-2 h-75">
+                    <div class="card-body">
+                        <h5 class="card-title h4 text-center bg-zona">Pelea Robótica <img src="https://static.wikia.nocookie.net/brawlstars/images/c/cf/Robo_Rumble.png/revision/latest/scale-to-width-down/90?cb=20200304181912" class="img-event" alt="pelea robotica"></h5>
+                        <p class="card-text">En este evento, tres jugadores tendrán que defender una caja fuerte ubicada en el centro del mapa. Irán apareciendo diversos robots que, por oleadas, intentarán destruir la caja fuerte. Cuanto más se dure, más fichas ganará y más irá aumentando la dificultad.</p>
+                    </div>
+                </div>
+                <div class="col-lg-5 card m-2 h-75">
+                    <div class="card-body">
+                        <h5 class="card-title h4 text-center bg-zona">Todos contra uno <img src="https://static.wikia.nocookie.net/brawlstars/images/2/24/Boss_Fight.png/revision/latest/scale-to-width-down/90?cb=20181226162523" class="img-event" alt="asedio"></h5>
+                        <p class="card-text">En este evento, tres jugadores se enfrentarán contra un Mega Robot ubicado en el centro del mapa. Este robot a medida que pase el tiempo se irá haciendo más fuerte. A diferencia de los robots que se aprecian en modos como Supervivencia o en Asedio, este robot tiene distintas etapas y clases de ataque, además de que presentará pequeñas oleadas de robots secundarios que dificultarán causar daño al mega robot.<br>
+                        Al culminar una partida, el jugador podrá acceder al siguiente nivel de dificultad. Las recompensas de fichas van de acuerdo al nivel de dificultad. En este evento las fichas no se pueden multiplicar.</p>
+                    </div>
+                </div>
+                <div class="col-lg-5 card m-2 h-75">
+                    <div class="card-body">
+                        <h5 class="card-title h4 text-center bg-zona">Irrupción Urbana <img src="https://static.wikia.nocookie.net/brawlstars/images/0/02/Super_City_Rampage.png/revision/latest/scale-to-width-down/90?cb=20200702053900" class="img-event" alt="zona restringida"></h5>
+                        <p class="card-text">En este evento, junto a otros dos compañeros debes evitar que un monstruo gigante destruya toda Superciudad, cada vez que el monstruo sea vencido se aumentara la dificulta, cada vez que la dificultad aumente el monstruo tendrá más vida y más velocidad de movimiento y ataque.</p>
+                    </div>
+                </div>
+                </div>
+        </section>        
+    </main>
+    <footer>
+        <div class="container-fluid position-relative bg-warning ">
+            <div class="row align-items-center">
+                <a class="col-6 col-sm-6 col-lg-4 fs-4 fw-bold text-center">Más sobre de Supercell</a>
+                <a class="col-6 col-sm-6 col-lg-4 fs-4 fw-bold text-center">Para desarroladores</a>
+                <div class="col-12 col-sm-12 col-lg-4 fs-4 fw-bold text-center">Redes sociales
+                    <div class="row justify-content-end"> 
+                        <span class="col-12 col-sm-6 col-lg-12 fs-5 fw-light">YouTube  &nbsp<i class="fab fa-youtube"></i></span> 
+                        <span class="col-12 col-sm-6 col-lg-12 fs-5 fw-light">Twitter  &nbsp<i class="fab fa-twitter"></i></span> 
+                        <span class="col-12 col-sm-6 col-lg-12 fs-5 fw-light">Instagram  &nbsp<i class="fab fa-instagram"></i></span> 
+                        <span class="col-12 col-sm-6 col-lg-12 fs-5 fw-light">Reddit  &nbsp<i class="fab fa-reddit"></i></span> 
+                    </div>
+                </span> 
+            </div> 
+        </div>
+    </footer>
+    <script src="./dist/js/bootstrap.js"></script>      
+</body>
+</html>
